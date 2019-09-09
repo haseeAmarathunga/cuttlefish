@@ -33,8 +33,8 @@ gem "sidekiq"
 gem "sinatra", require: nil
 
 gem "batch-loader"
-gem "devise"
-gem "devise_invitable"
+gem "devise", ">= 4.7.1"
+gem "devise_invitable", ">= 1.7.4"
 gem "dkim"
 gem "dnsbl-client"
 gem "factory_bot_rails"
