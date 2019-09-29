@@ -116,7 +116,7 @@ group :development, :test do
   gem "capybara"
   gem "rspec-activemodel-mocks"
   gem "rspec-rails"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 3.14.0"
   # For resizing screenshots
   gem "rmagick"
 end
