@@ -94,8 +94,8 @@ GEM
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       xpath (~> 3.1)
-    childprocess (0.9.0)
-      ffi (~> 1.0, >= 1.0.11)
+    childprocess (2.0.0)
+      rake (< 13.0)
     climate_control (0.2.0)
     coderay (1.1.2)
     coercible (1.0.0)
@@ -146,7 +146,7 @@ GEM
     factory_bot_rails (4.10.0)
       factory_bot (~> 4.10.0)
       railties (>= 3.0.0)
-    ffi (1.9.25)
+    ffi (1.11.1)
     file-tail (1.2.0)
       tins (~> 1.0)
     fog-aws (3.0.0)
@@ -384,7 +384,7 @@ GEM
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
-    rubyzip (1.2.2)
+    rubyzip (1.3.0)
     rvm-capistrano (1.5.6)
       capistrano (~> 2.15.4)
     safe_yaml (1.0.4)
@@ -399,9 +399,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.14.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.2)
+    selenium-webdriver (3.142.4)
+      childprocess (>= 0.5, < 3.0)
+      rubyzip (~> 1.2, >= 1.2.2)
     sexp_processor (4.11.0)
     shellany (0.0.1)
     sidekiq (5.1.3)
@@ -532,7 +532,7 @@ DEPENDENCIES
   rubocop
   rvm-capistrano (>= 1.5.6)
   sass-rails
-  selenium-webdriver
+  selenium-webdriver (>= 3.14.0)
   sidekiq
   sinatra
   spring
@@ -550,4 +550,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.16.5
+   1.17.3
