@@ -80,7 +80,7 @@ GEM
     bcrypt (3.1.12)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
-    builder (3.2.3)
+    builder (3.2.4)
     capistrano (2.15.9)
       highline
       net-scp (>= 1.0.0)
@@ -139,7 +139,7 @@ GEM
     erubi (1.7.1)
     erubis (2.7.0)
     eventmachine (1.2.7)
-    excon (0.62.0)
+    excon (0.71.1)
     execjs (2.7.0)
     factory_bot (4.10.0)
       activesupport (>= 3.0.0)
@@ -149,14 +149,14 @@ GEM
     ffi (1.9.25)
     file-tail (1.2.0)
       tins (~> 1.0)
-    fog-aws (3.0.0)
+    fog-aws (3.5.2)
       fog-core (~> 2.1)
       fog-json (~> 1.1)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-core (2.1.0)
+    fog-core (2.2.0)
       builder
-      excon (~> 0.58)
+      excon (~> 0.71)
       formatador (~> 0.2)
       mime-types
     fog-json (1.2.0)
@@ -258,15 +258,15 @@ GEM
     marcel (0.3.2)
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
-    mime-types (3.1)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2019.1009)
     mimemagic (0.3.2)
     mini_mime (1.0.0)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     minitar (0.6.1)
     minitest (5.11.3)
-    multi_json (1.13.1)
+    multi_json (1.14.1)
     mustermann (1.0.2)
     nenv (0.3.0)
     net-scp (1.2.1)
@@ -278,8 +278,8 @@ GEM
       net-ssh (>= 4.0.0)
     newrelic_rpm (5.2.0.345)
     nio4r (2.3.1)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -493,7 +493,7 @@ DEPENDENCIES
   faker!
   file-tail
   flatui-rails!
-  fog-aws
+  fog-aws (>= 3.0.0)
   font-awesome-rails
   foreman
   formtastic
@@ -550,4 +550,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.16.5
+   1.17.3

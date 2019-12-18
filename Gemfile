@@ -44,7 +44,7 @@ gem "formtastic"
 # Use pull request that has needed Rails 4 improvements https://github.com/pkurek/flatui-rails/pull/25
 gem "flatui-rails", git: "https://github.com/iffyuva/flatui-rails.git",
                     ref: "3d3c423"
-gem "fog-aws"
+gem "fog-aws", ">= 3.0.0"
 gem "font-awesome-rails"
 gem "friendly_id"
 gem "google-analytics-rails"
