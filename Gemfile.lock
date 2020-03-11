@@ -452,7 +452,7 @@ GEM
     uglifier (4.1.15)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
-    user_agent_parser (2.4.1)
+    user_agent_parser (2.6.0)
     vcr (4.0.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -543,11 +543,11 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier
-  user_agent_parser
+  user_agent_parser (>= 2.6.0)
   vcr
   virtus
   webmock
   will_paginate
 
 BUNDLED WITH
-   1.16.5
+   1.17.3

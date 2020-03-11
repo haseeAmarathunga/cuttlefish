@@ -66,7 +66,7 @@ gem "newrelic_rpm"
 gem "nokogiri"
 gem "premailer"
 gem "pundit"
-gem "user_agent_parser"
+gem "user_agent_parser", ">= 2.6.0"
 gem "virtus"
 
 # To use ActiveModel has_secure_password
