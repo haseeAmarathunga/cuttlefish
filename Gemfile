@@ -105,7 +105,7 @@ end
 
 group :test do
   gem "climate_control"
-  gem "coveralls", require: false
+  gem "coveralls", ">= 0.8.22", require: false
   gem "database_cleaner"
   gem "rails-controller-testing"
   gem "vcr"
