@@ -2,17 +2,17 @@
 
 source "https://rubygems.org"
 
-gem "dotenv-rails"
+gem "dotenv-rails", ">= 2.5.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "5.2.0"
+gem "rails", "5.2.4.3"
 
 gem "pg"
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem "sass-rails"
+  gem "sass-rails", ">= 5.0.7"
   # Don't upgrade to Bootstrap 3. It's already responsive, for example, so
   # there's a bunch of things we need to do for the upgrade
   gem "bootstrap-sass", "~> 2.0"
@@ -20,39 +20,39 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem "therubyracer", platforms: :ruby
 
-  gem "less-rails"
+  gem "less-rails", ">= 3.0.0"
   gem "uglifier"
 end
 
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.3.3"
 
-gem "jbuilder"
+gem "jbuilder", ">= 2.7.0"
 
 gem "eventmachine"
 gem "sidekiq"
 gem "sinatra", require: nil
 
 gem "batch-loader"
-gem "devise"
-gem "devise_invitable"
+gem "devise", ">= 4.4.3"
+gem "devise_invitable", ">= 1.7.4"
 gem "dkim"
 gem "dnsbl-client"
-gem "factory_bot_rails"
+gem "factory_bot_rails", ">= 4.10.0"
 gem "file-tail"
 gem "foreman"
-gem "formtastic"
+gem "formtastic", ">= 2.3.1"
 # Use pull request that has needed Rails 4 improvements https://github.com/pkurek/flatui-rails/pull/25
 gem "flatui-rails", git: "https://github.com/iffyuva/flatui-rails.git",
                     ref: "3d3c423"
 gem "fog-aws"
-gem "font-awesome-rails"
-gem "friendly_id"
+gem "font-awesome-rails", ">= 4.7.0.4"
+gem "friendly_id", ">= 5.2.4"
 gem "google-analytics-rails"
 gem "graphql"
-gem "graphql-client"
+gem "graphql-client", ">= 0.13.0"
 gem "graphql-guard"
 gem "gravatar_image_tag"
-gem "haml-rails"
+gem "haml-rails", ">= 1.0.0"
 gem "honeybadger"
 gem "syslog_protocol"
 gem "will_paginate"
@@ -65,7 +65,7 @@ gem "minitar"
 gem "newrelic_rpm"
 gem "nokogiri"
 gem "premailer"
-gem "pundit"
+gem "pundit", ">= 1.1.0"
 gem "user_agent_parser"
 gem "virtus"
 
@@ -84,7 +84,7 @@ gem "virtus"
 group :development do
   gem "capistrano", "~> 2"
   gem "faker", git: "https://github.com/stympy/faker.git", branch: "master"
-  gem "graphiql-rails"
+  gem "graphiql-rails", ">= 1.4.10"
   gem "guard"
   gem "guard-rspec"
   gem "listen"
@@ -94,8 +94,8 @@ group :development do
   gem "rb-inotify", require: false
   gem "rubocop", require: false
   gem "rvm-capistrano", ">= 1.5.6", require: false
-  gem "spring"
-  gem "spring-commands-rspec"
+  gem "spring", ">= 2.0.2"
+  gem "spring-commands-rspec", ">= 1.0.4"
   gem "terminal-notifier"
   gem "terminal-notifier-guard"
   # Webrick gives us annoying warnings "could not determine content-length
@@ -107,15 +107,15 @@ group :test do
   gem "climate_control"
   gem "coveralls", require: false
   gem "database_cleaner"
-  gem "rails-controller-testing"
+  gem "rails-controller-testing", ">= 1.0.2"
   gem "vcr"
   gem "webmock"
 end
 
 group :development, :test do
   gem "capybara"
-  gem "rspec-activemodel-mocks"
-  gem "rspec-rails"
+  gem "rspec-activemodel-mocks", ">= 1.0.3"
+  gem "rspec-rails", ">= 3.7.2"
   gem "selenium-webdriver"
   # For resizing screenshots
   gem "rmagick"
